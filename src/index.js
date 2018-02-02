@@ -20,7 +20,7 @@ class App extends Component {
   }
 
   videoSearch(term) {
-    YTSearch({ key: API_KEY, term: term + "Joe Rogan Experience" }, videos => {
+    YTSearch({ key: API_KEY, term: term }, videos => {
       this.setState({
         videos: videos,
         selectedVideo: videos[0]
